@@ -90,14 +90,14 @@ const Header = ({ globalHandlers, globalContextState, dynamicContextState, textT
                   </a>
                   <a className="button is-warning">{dynamicContextState[lang].register.value}</a>
                   <div>
-                    <Form.Check
-                      style={{ transform: "scale(1.3)" }}
-                      className='ml-2'
-                      type="switch"
-                      id="custom-switch"
-                      checked={globalContextState.editMode}
-                      onChange={globalHandlers.editModeChangeHandler}
-                    />
+                      <Form.Check
+                        style={{ transform: "scale(1.3)" }}
+                        className='ml-2'
+                        type="switch"
+                        id="custom-switch"
+                        checked={globalContextState.editMode}
+                        onChange={globalHandlers.editModeChangeHandler}
+                      />
                   </div>
                   {globalContextState.editMode && (
                     <div>
